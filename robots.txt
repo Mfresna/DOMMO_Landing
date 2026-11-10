@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mfresna.github.io/DOMMO_Landing/sitemap.xml

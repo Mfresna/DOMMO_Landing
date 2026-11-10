@@ -1,0 +1,5 @@
+/* Solo se carga sin JavaScript: muestra todo el contenido sin esperar a la animación de entrada. */
+.intro-loader { display: none; }
+.page-loading > .site-header, .page-loading > main, .page-loading > .site-footer { opacity: 1; }
+.reveal { opacity: 1; transform: none; }
+.menu-toggle { display: none; }
