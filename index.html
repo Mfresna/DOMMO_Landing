@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <!-- Seguridad: CSP mínima (todo es propio; solo se permite el iframe del mapa de Google).
        Los headers X-Content-Type-Options, frame-ancestors y HSTS deben configurarse en el hosting. -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; frame-src https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; frame-src https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'none'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DOMMO · espacio matheu — Muy pronto</title>
@@ -21,6 +21,13 @@
 
   <!-- Estilo -->
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Evitar la selección de texto en toda la landing. */
+    body, body * {
+      user-select: none;
+      -webkit-user-select: none;
+    }
+  </style>
   <!-- Sin JavaScript: mostrar el contenido igual (sin animaciones de entrada) -->
   <noscript><link rel="stylesheet" href="css/noscript.css"></noscript>
 
@@ -122,8 +129,8 @@
         <div class="project-copy">
           <p class="eyebrow">El proyecto</p>
           <h2>El espacio también habla de vos.</h2>
-          <p>DOMMO nace en Matheu, Mar del Plata, para quienes trabajan por cuenta propia y quieren recibir a sus clientes en un lugar a la altura, sin el costo de tener una oficina propia.</p>
-          <p>Vas a poder reservar por hora la sala que necesites, ya sea para una reunión o para trabajar en una oficina privada, y usar los servicios del espacio sin vueltas.</p>
+          <p>DOMMO nace en una casa de estilo marplatense en el barrio Chauvin, Mar del Plata, para quienes trabajan por cuenta propia y quieren recibir a sus clientes en un lugar a la altura, sin el costo de tener una oficina propia.</p>
+          <p>Vas a poder reservar la sala que necesites, ya sea para una reunión o para trabajar en una oficina privada, y usar los servicios del espacio sin vueltas.</p>
         </div>
       </div>
     </section>
@@ -215,7 +222,7 @@
           </li>
           <li class="service reveal reveal--delayed-2">
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h12v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM16 10h2a2.5 2.5 0 0 1 0 5h-2M8 3v3M12 3v3"/></svg>
-            <h3>Café</h3>
+            <h3>Coffee Station</h3>
             <p>Un sector de cafetería para hacer una pausa entre reuniones.</p>
           </li>
           <li class="service reveal reveal--delayed-3">
@@ -299,7 +306,7 @@
       <div class="container map-block reveal">
         <div class="map-heading">
           <p class="eyebrow">Encontranos</p>
-          <h2>Estamos en Matheu.</h2>
+          <h2>Tu próximo espacio está acá.</h2>
           <p>Un espacio tranquilo y conectado, en el corazón de Mar del Plata.</p>
         </div>
         <div class="map-frame">

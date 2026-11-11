@@ -58,8 +58,8 @@
 
   // ---- WhatsApp: todos los elementos con data-whatsapp ----
   // Editar acá el número (solo dígitos, con código de país) y el mensaje.
-  var WHATSAPP_NUMERO = "5492235233171";
-  var WHATSAPP_MENSAJE = "¡Hola! Quiero saber más sobre la inauguración de DOMMO";
+  var WHATSAPP_NUMERO = "5492236919857";
+  var WHATSAPP_MENSAJE = "¡Hola! Quiero saber más sobre DOMMO";
 
   var waUrl = "https://wa.me/" + WHATSAPP_NUMERO + "?text=" + encodeURIComponent(WHATSAPP_MENSAJE);
   document.querySelectorAll("[data-whatsapp]").forEach(function (el) {
