@@ -90,7 +90,7 @@ p { margin: 0 0 1em; }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 76px; }
 .brand img { height: 44px; width: auto; }
 .nav { display: flex; gap: 32px; }
-.menu-toggle { display: none; width: 42px; height: 42px; padding: 10px 8px; border: 1px solid var(--graphite); background: transparent; cursor: pointer; }
+.menu-toggle { display: none; width: 42px; height: 42px; padding: 10px 8px; border: 0; background: transparent; cursor: pointer; }
 .menu-toggle span { display: block; height: 1px; margin: 5px 0; background: var(--graphite); transition: transform .25s ease, opacity .25s ease; }
 .menu-toggle.is-open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
 .menu-toggle.is-open span:nth-child(2) { opacity: 0; }
