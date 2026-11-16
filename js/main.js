@@ -36,6 +36,19 @@
     });
   }
 
+  // ---- Header transparente sobre la portada, sólido al salir de ella ----
+  var siteHeader = document.querySelector(".site-header");
+  var heroSection = document.querySelector(".hero");
+  if (siteHeader && heroSection) {
+    var updateHeader = function () {
+      var overHero = heroSection.getBoundingClientRect().bottom > siteHeader.offsetHeight;
+      siteHeader.classList.toggle("is-top", overHero);
+    };
+    window.addEventListener("scroll", updateHeader, { passive: true });
+    window.addEventListener("resize", updateHeader);
+    updateHeader();
+  }
+
   // ---- Link activo del nav según la sección visible ----
   if (nav && "IntersectionObserver" in window) {
     var navLinks = Array.prototype.slice.call(nav.querySelectorAll('a[href^="#"]'));
@@ -76,14 +89,14 @@
   var roomFeatures = document.querySelector("[data-room-features]");
   var roomClose = document.querySelector("[data-room-close]");
   var roomData = {
-    meeting: { title: "DOMMO\nMEETING ROOM", image: "assets/photos/reunion-vidrio.jpg", description: "Un espacio pensado para reuniones y presentaciones, con mesa de directorio, ocho sillas ergonomicas, TV y Coffee Station cercano.", features: ["Hasta 8 personas", "TV para presentaciones", "Wi-Fi", "Iluminacion natural"] },
-    sala1: { title: "DOMMO ESSENTIAL", image: "assets/photos/sala-1.jpg", description: "Oficina privada pensada para una jornada comoda y flexible.", features: ["Hasta 3-4 personas", "Escritorio principal", "Silla ejecutiva", "Wi-Fi"] },
-    sala2: { title: "DOMMO ESSENTIAL", image: "assets/photos/oficina.jpg", description: "Oficina privada con escritorio principal, silla ejecutiva y espacio para recibir clientes.", features: ["Hasta 3-4 personas", "Escritorio principal", "Silla ejecutiva", "Wi-Fi"] },
-    sala3: { title: "DOMMO COMFORT", image: "assets/photos/sala-suite-1-copia.jpg", description: "Oficina con living integrado o bano en suite, pensada para trabajar con comodidad.", features: ["Hasta 4 personas", "Living integrado", "Wi-Fi", "Climatizacion"] },
-    sala4: { title: "DOMMO COMFORT", image: "assets/photos/sala-2.jpg", description: "Oficina con living integrado o bano en suite, pensada para trabajar con comodidad.", features: ["Hasta 4 personas", "Living integrado", "Wi-Fi", "Climatizacion"] },
-    sala5: { title: "DOMMO LAB", image: "assets/photos/oficina.jpg", description: "Oficina suite con bacha y equipamiento para profesionales de salud o estetica.", features: ["Hasta 2 personas", "Bacha con agua corriente", "TV", "Wi-Fi"] },
-    sala6: { title: "DOMMO ESSENTIAL", image: "assets/photos/sala-2.jpg", description: "Oficina privada para trabajar con tranquilidad en un entorno cuidado y luminoso.", features: ["Hasta 3-4 personas", "Escritorio principal", "Wi-Fi", "Iluminacion natural"] },
-    sala7: { title: "DOMMO ESSENTIAL", image: "assets/photos/sala-suite-1-copia.jpg", description: "Oficina privada para una jornada de trabajo comoda y concentrada.", features: ["Hasta 3-4 personas", "Escritorio principal", "Wi-Fi", "Climatizacion"] }
+    meeting: { title: "DOMMO\nMEETING ROOM", image: "assets/photos/reunion-vidrio.jpg", description: "Un espacio pensado para reunirte con tus clientes o aliados, con mesa de directorio, ocho sillas ergonómicas, TV y Coffee Station cercano.", features: ["Hasta 8 personas", "Mesa de directorio", "TV para presentaciones", "Wi-Fi", "Coffee Station cercano", "Iluminación natural"] },
+    sala1: { title: "DOMMO ESSENTIAL", image: "assets/photos/oficina.jpg", description: "Oficina privada para atender solo o con un acompañante, con todo lo necesario para una jornada cómoda y flexible.", features: ["Hasta 3-4 personas", "Escritorio principal", "Silla ejecutiva", "Sillas para clientes", "TV", "Wi-Fi de alta velocidad", "Climatización", "Iluminación natural"] },
+    sala2: { title: "DOMMO ESSENTIAL", image: "assets/photos/oficina.jpg", description: "Oficina privada con escritorio principal, silla ejecutiva y lugar para recibir a tus clientes o pacientes.", features: ["Hasta 3-4 personas", "Escritorio principal", "Silla ejecutiva", "Sillas para clientes", "TV", "Wi-Fi de alta velocidad", "Climatización", "Iluminación natural"] },
+    sala3: { title: "DOMMO COMFORT", image: "assets/photos/sala-2.jpg", description: "Oficina con living integrado, pensada para que tus clientes esperen y conversen con más comodidad.", features: ["Hasta 4 personas", "Escritorio principal", "Silla ejecutiva", "Living integrado", "TV", "Wi-Fi de alta velocidad", "Climatización", "Iluminación natural"] },
+    sala4: { title: "DOMMO COMFORT", image: "assets/photos/sala-2.jpg", description: "Oficina con living integrado, pensada para que tus clientes esperen y conversen con más comodidad.", features: ["Hasta 4 personas", "Escritorio principal", "Silla ejecutiva", "Living integrado", "TV", "Wi-Fi de alta velocidad", "Climatización", "Iluminación natural"] },
+    sala5: { title: "DOMMO LAB", image: "assets/photos/sala-suite-1-copia.jpg", description: "Oficina suite con bacha de agua corriente, ideal para profesionales de la salud y la estética.", features: ["Hasta 2 personas", "Bacha con agua corriente", "Mueble bajo mesada", "Escritorio principal", "TV", "Wi-Fi de alta velocidad", "Climatización", "Iluminación natural"] },
+    sala6: { title: "DOMMO ESSENTIAL", image: "assets/photos/oficina.jpg", description: "Oficina privada para trabajar con tranquilidad en un entorno cuidado y luminoso.", features: ["Hasta 3-4 personas", "Escritorio principal", "Silla ejecutiva", "Sillas para clientes", "TV", "Wi-Fi de alta velocidad", "Climatización", "Iluminación natural"] },
+    sala7: { title: "DOMMO ESSENTIAL", image: "assets/photos/oficina.jpg", description: "Oficina privada para una jornada de trabajo cómoda y concentrada.", features: ["Hasta 3-4 personas", "Escritorio principal", "Silla ejecutiva", "Sillas para clientes", "TV", "Wi-Fi de alta velocidad", "Climatización", "Iluminación natural"] }
   };
 
   function closeRoomDialog() {

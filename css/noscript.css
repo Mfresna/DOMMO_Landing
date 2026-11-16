@@ -3,3 +3,8 @@
 .page-loading > .site-header, .page-loading > main, .page-loading > .site-footer { opacity: 1; }
 .reveal { opacity: 1; transform: none; }
 .menu-toggle { display: none; }
+/* Sin JS el header no cambia al scrollear: se deja sólido para que se lea sobre cualquier sección. */
+.site-header.is-top { background: var(--cream); border-bottom-color: var(--line); }
+.site-header.is-top .brand img { filter: none; }
+.site-header.is-top .nav a { color: var(--text-soft); }
+.site-header.is-top .btn { background: var(--graphite); color: var(--cream); border-color: var(--graphite); }

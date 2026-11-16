@@ -42,23 +42,23 @@
   <meta property="og:site_name" content="DOMMO · espacio matheu">
   <meta property="og:locale" content="es_AR">
   <meta name="twitter:card" content="summary_large_image">
-  <meta property="og:title" content="DOMMO · espacio matheu — Un lugar a la altura de tu trabajo">
+  <meta property="og:title" content="DOMMO · espacio matheu — Un espacio a la altura de tu trabajo">
   <meta property="og:description" content="Espacio de trabajo flexible en San Luis 3802, Mar del Plata, para profesionales independientes: espacios de reuniones, oficinas privadas y servicios.">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="DOMMO · espacio matheu">
-  <!-- URLs absolutas: al migrar al dominio definitivo, reemplazar https://mfresna.github.io/DOMMO_Landing/ (ver docs/DESPLIEGUE.md) -->
-  <meta property="og:image" content="https://mfresna.github.io/DOMMO_Landing/assets/og-image.png">
-  <meta name="twitter:image" content="https://mfresna.github.io/DOMMO_Landing/assets/og-image.png">
-  <meta property="og:url" content="https://mfresna.github.io/DOMMO_Landing/">
-  <link rel="canonical" href="https://mfresna.github.io/DOMMO_Landing/">
+  <!-- URLs absolutas del dominio definitivo: https://www.dommocoworking.com.ar/ -->
+  <meta property="og:image" content="https://www.dommocoworking.com.ar/assets/og-image.png">
+  <meta name="twitter:image" content="https://www.dommocoworking.com.ar/assets/og-image.png">
+  <meta property="og:url" content="https://www.dommocoworking.com.ar/">
+  <link rel="canonical" href="https://www.dommocoworking.com.ar/">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "DOMMO · espacio matheu",
-    "url": "https://mfresna.github.io/DOMMO_Landing/",
+    "url": "https://www.dommocoworking.com.ar/",
     "description": "Espacio de trabajo flexible para profesionales independientes: espacios de reuniones y oficinas privadas.",
     "address": {
       "@type": "PostalAddress",
@@ -81,7 +81,7 @@
     <span class="intro-loader__line" aria-hidden="true"></span>
   </div>
 
-  <header class="site-header">
+  <header class="site-header is-top">
     <div class="container header-inner">
       <a href="#inicio" class="brand" aria-label="DOMMO espacio matheu, ir al inicio">
         <img src="assets/logo-dommo.svg" alt="DOMMO · espacio matheu" width="160" height="59">
@@ -91,6 +91,7 @@
         <a href="#quienes-somos-contenido">Quiénes somos</a>
         <a href="#salas-contenido">Espacios</a>
         <a href="#reserva-online-contenido">Reserva online</a>
+        <a class="nav__cta" data-whatsapp href="#contacto">Escribinos</a>
       </nav>
       <a class="btn btn--small header-whatsapp" data-whatsapp href="#contacto">WhatsApp</a>
       <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal">
@@ -103,34 +104,59 @@
 
     <!-- HERO -->
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-text reveal reveal--left">
-          <p class="eyebrow">Muy pronto</p>
-          <h1>Un lugar a la altura de tu trabajo.</h1>
-          <p class="lead">Un espacio de trabajo flexible para profesionales independientes que necesitan trabajar y recibir clientes en un entorno cuidado, privado o semiprivado.</p>
-          <div class="actions">
-            <a class="btn btn--ghost" data-whatsapp href="#contacto">Escribinos</a>
+      <img class="hero__bg" src="assets/photos/hero-imagen-05.jpg" alt="Recepción de DOMMO espacio matheu, con mostrador de madera y luz cálida" width="940" height="720" fetchpriority="high" decoding="async">
+      <div class="hero__veil" aria-hidden="true"></div>
+      <div class="hero__lines" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="container hero__inner">
+        <p class="hero__intro">Sabemos que cada profesional construye su propio camino. Por eso creamos un espacio flexible, cálido y cuidado, para que trabajes con tranquilidad y recibas a tus clientes con confianza.</p>
+        <h1 class="hero__title">DOMMO<span class="sr-only"> espacio matheu — Un espacio a la altura de tu trabajo</span></h1>
+        <div class="hero__foot">
+          <div class="hero__foot-copy">
+            <p class="hero__tag">Muy pronto · espacio matheu</p>
+            <p class="hero__claim" aria-hidden="true">Un <strong>espacio</strong> a la <strong>altura</strong> de tu <strong>trabajo</strong></p>
           </div>
-        </div>
-        <div class="hero-media brand-visual reveal reveal--right">
-          <img class="hero-visual-image" src="assets/photos/entrada-dommo.jpeg" alt="Entrada de DOMMO espacio matheu" width="1600" height="900" fetchpriority="high" decoding="async">
-          <span class="caption">Identidad DOMMO · espacio matheu</span>
         </div>
       </div>
     </section>
 
+    <!-- STATEMENT + ESPACIOS -->
+    <section class="statement section">
+      <div class="statement__stage">
+        <img class="statement__bg" src="assets/photos/fachada-matheu.jpg" alt="Fachada de DOMMO espacio matheu, en la esquina de Matheu y San Luis" loading="lazy" width="1195" height="896">
+        <div class="container statement__top">
+          <div class="statement__copy">
+            <h2 class="statement__title reveal reveal--right">Un <em>espacio</em> a la altura de tu <em>trabajo</em>.</h2>
+            <p class="statement__lead reveal">Un espacio de trabajo flexible para profesionales independientes que necesitan trabajar y recibir clientes en un entorno cuidado, privado o semiprivado.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <nav class="space-row reveal" aria-label="Espacios DOMMO">
+          <a class="space-row__item" href="#salas-contenido">
+            <span class="space-row__brand">DOMMO</span><span class="space-row__name">ESSENTIAL</span><span class="space-row__meta">Oficina privada</span>
+          </a>
+          <a class="space-row__item" href="#salas-contenido">
+            <span class="space-row__brand">DOMMO</span><span class="space-row__name">LAB</span><span class="space-row__meta">Oficina suite con bacha</span>
+          </a>
+          <a class="space-row__item" href="#salas-contenido">
+            <span class="space-row__brand">DOMMO</span><span class="space-row__name">COMFORT</span><span class="space-row__meta">Oficina con living o baño en suite</span>
+          </a>
+          <a class="space-row__item" href="#salas-contenido">
+            <span class="space-row__brand">DOMMO</span><span class="space-row__name">MEETING ROOM</span><span class="space-row__meta">Sala de reuniones</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+
     <!-- EL PROYECTO -->
-    <section id="proyecto-contenido" class="section section--bone reveal">
-      <div class="container project-grid">
-        <figure class="project-photo" data-scroll-speed="0.095">
-          <img src="assets/photos/sala-proyecto.jpg" alt="Sala de trabajo de DOMMO" loading="lazy" width="1364" height="910">
-          <figcaption>Un espacio a la altura de tu trabajo.</figcaption>
-        </figure>
-        <div class="project-copy">
+    <section id="proyecto-contenido" class="band reveal">
+      <img class="band__bg" src="assets/photos/sala-proyecto.jpg" alt="Sala de trabajo de DOMMO" loading="lazy" width="1364" height="910">
+      <div class="container band__inner">
+        <div class="band__card project-copy">
           <p class="eyebrow">El proyecto</p>
           <h2>El espacio también habla de vos.</h2>
-          <p>DOMMO nace en una casa de estilo marplatense en Mar del Plata, para quienes trabajan por cuenta propia y quieren recibir a sus clientes en un lugar a la altura, sin el costo de tener una oficina propia.</p>
-          <p>Vas a poder reservar el espacio que necesites, ya sea para una reunión o para trabajar en una oficina privada, y usar los servicios del lugar sin vueltas.</p>
+          <p>DOMMO nace en una casa marplatense de las de siempre, renovada con calidez y diseño de autor. La pensamos para quienes trabajan por cuenta propia y quieren recibir a sus clientes en un espacio a la altura, sin el costo de tener una oficina propia.</p>
+          <p>Elegí el espacio que necesitás, para una reunión o para trabajar en tu propia oficina privada, y usá los servicios del lugar sin vueltas. Así vos te ocupás de lo que importa: tu trabajo.</p>
         </div>
       </div>
     </section>
@@ -140,8 +166,8 @@
         <div class="about-copy">
           <p class="eyebrow">Quiénes somos</p>
           <h2>Un espacio pensado para trabajar mejor.</h2>
-          <p>Somos DOMMO: un coworking cercano, cuidado y flexible para profesionales independientes, equipos pequeños y personas que necesitan un lugar para concentrarse o recibir clientes.</p>
-          <p>Creemos que trabajar bien también depende del entorno. Por eso diseñamos una experiencia simple, cálida y profesional, sin rigidez corporativa.</p>
+          <p>Somos DOMMO: un coworking cercano y flexible para profesionales independientes, equipos pequeños y para quienes necesitan un lugar donde concentrarse o recibir clientes.</p>
+          <p>Creemos que trabajar bien también depende del lugar donde lo hacés. Por eso cuidamos cada detalle, desde la luz hasta el café, para que te sientas en casa y, a la vez, en tu oficina. Sin rigideces, con trato humano.</p>
         </div>
         <figure class="about-photo" data-scroll-speed="0.08">
           <img src="assets/photos/sala-1.jpg" alt="Sala luminosa de DOMMO para trabajar" loading="lazy" width="1488" height="992">
@@ -149,20 +175,27 @@
       </div>
     </section>
 
-    <section class="visual-strip section reveal" aria-label="El espacio DOMMO">
-      <div class="container visual-strip-grid">
-        <div class="visual-strip-label">
-          <p class="eyebrow">La experiencia DOMMO</p>
-          <h2>Un espacio renovado para el trabajo de siempre.</h2>
-        </div>
-        <figure class="visual-tile visual-tile--side" data-scroll-speed="0.07">
+    <section class="collage section reveal" aria-label="El espacio DOMMO">
+      <div class="container collage__head">
+        <p class="eyebrow">La experiencia DOMMO</p>
+        <h2>Un espacio que se muestra solo.</h2>
+      </div>
+      <div class="collage__grid">
+        <figure class="collage__tile collage__tile--a">
+          <img src="assets/photos/recepcion-manual.jpg" alt="Recepción de DOMMO con mostrador de madera" loading="lazy" width="1450" height="839">
+          <figcaption>Recepción</figcaption>
+        </figure>
+        <figure class="collage__tile collage__tile--b">
           <img src="assets/photos/sala-suite-1-copia.jpg" alt="Sala suite de DOMMO" loading="lazy" width="1488" height="992">
+          <figcaption>Suite</figcaption>
         </figure>
-        <figure class="visual-tile visual-tile--center" data-scroll-speed="0.07">
+        <figure class="collage__tile collage__tile--c">
           <img src="assets/photos/pasillo-copia.jpg" alt="Pasillo interior de DOMMO" loading="lazy" width="1110" height="1480">
+          <figcaption>Pasillo</figcaption>
         </figure>
-        <figure class="visual-tile visual-tile--side" data-scroll-speed="0.07">
+        <figure class="collage__tile collage__tile--d">
           <img src="assets/photos/sala-2.jpg" alt="Sala de trabajo de DOMMO" loading="lazy" width="1364" height="910">
+          <figcaption>Sala de trabajo</figcaption>
         </figure>
       </div>
     </section>
@@ -172,7 +205,7 @@
       <div id="salas-contenido" class="container">
         <p class="eyebrow">Espacios</p>
         <h2>Espacios para cada manera de trabajar.</h2>
-        <p class="section-intro">Conocé los espacios de DOMMO y elegí el entorno que mejor acompaña tu forma de trabajar.</p>
+        <p class="section-intro">Elegí el espacio que mejor acompaña tu forma de trabajar: para atender, para concentrarte o para reunirte con tu equipo.</p>
 
         <div class="cards cards--2">
           <article class="card reveal">
@@ -182,18 +215,19 @@
             </div>
             <div class="card-body">
               <h3>DOMMO MEETING ROOM</h3>
-              <p>Mesa de directorio, 8 sillas ergonomicas, TV para presentaciones de alto impacto, Wi-Fi, Coffee Station cercano e iluminacion natural. Capacidad hasta 8 personas.</p>
+              <p>Mesa de directorio, 8 sillas ergonómicas, TV para presentaciones de alto impacto, Wi-Fi, Coffee Station cercano, iluminación natural y diseño de autor. Capacidad hasta 8 personas.</p>
             </div>
           </article>
 
           <article class="card reveal reveal--delayed">
             <div class="brand-card brand-card--light">
               <img src="assets/photos/oficina.jpg" alt="Oficina privada de DOMMO" loading="lazy" width="1488" height="992">
-              <span>Un lugar a la altura de tu trabajo</span>
+              <span>Un espacio a la altura de tu trabajo</span>
             </div>
             <div class="card-body">
               <h3>DOMMO ESSENTIAL</h3>
-              <p>Escritorio principal, silla ejecutiva, sillas para pacientes o clientes, TV, Wi-Fi de alta velocidad, climatizacion e iluminacion natural. Capacidad hasta 3-4 personas.</p>
+              <p class="card-units">4 oficinas · ESSENTIAL 1, 2, 3 y 4</p>
+              <p>Escritorio principal, silla ejecutiva, sillas para pacientes o clientes, TV, Wi-Fi de alta velocidad, climatización, iluminación natural y diseño de autor. Capacidad hasta 3-4 personas.</p>
             </div>
           </article>
 
@@ -204,7 +238,7 @@
             </div>
             <div class="card-body">
               <h3>DOMMO LAB</h3>
-              <p>Oficina suite con escritorio principal, sillas para pacientes o clientes, mueble bajo mesada, bacha con agua corriente integrada, TV, Wi-Fi, climatización e iluminación natural. Capacidad hasta 2 personas.</p>
+              <p>Oficina suite con escritorio principal, sillas para pacientes o clientes, mueble bajo mesada, bacha con agua corriente integrada, TV, Wi-Fi de alta velocidad, climatización, iluminación natural y diseño de autor. Capacidad hasta 2 personas.</p>
             </div>
           </article>
 
@@ -215,7 +249,8 @@
             </div>
             <div class="card-body">
               <h3>DOMMO COMFORT</h3>
-              <p>Oficina con escritorio principal, sillas para pacientes o clientes, living integrado, TV, Wi-Fi, climatización e iluminación natural. Capacidad hasta 4 personas.</p>
+              <p class="card-units">2 oficinas · COMFORT 1 y 2</p>
+              <p>Oficina con escritorio principal, silla ejecutiva, sillas para pacientes o clientes, living integrado, TV, Wi-Fi de alta velocidad, climatización, iluminación natural y diseño de autor. Capacidad hasta 4 personas.</p>
             </div>
           </article>
         </div>
@@ -225,13 +260,12 @@
             <p class="eyebrow">Distribución del espacio</p>
             <h2>Cada espacio, en su lugar.</h2>
             <p class="plan-hint">Tocá el nombre de un espacio para ver fotos y detalles.</p>
-            <p>Explorá cómo se conectan los ambientes de DOMMO en cada nivel.</p>
           </div>
           <div class="floorplans" aria-label="Croquis de las plantas de DOMMO">
             <div class="floorplan">
               <span class="floorplan-title">Planta baja</span>
               <div class="floorplan-map floorplan-map--ground">
-                <img class="floorplan-image" src="assets/plano-pb.png" alt="Plano original de la planta baja de DOMMO">
+                <img class="floorplan-image" src="assets/plano-pb-transparente.png" alt="Plano original de la planta baja de DOMMO">
                 <span class="room room--lab">DOMMO LAB</span>
                 <span class="room room--meeting">Espacio de reuniones</span>
                 <span class="room room--private">Oficina privada</span>
@@ -241,7 +275,7 @@
             <div class="floorplan">
               <span class="floorplan-title">Planta alta</span>
               <div class="floorplan-map floorplan-map--upper">
-                <img class="floorplan-image" src="assets/plano-pa.png" alt="Plano original de la planta alta de DOMMO">
+                <img class="floorplan-image" src="assets/plano-pa-transparente.png" alt="Plano original de la planta alta de DOMMO">
                 <span class="room room--private room--upper-top">DOMMO ESSENTIAL</span>
                 <span class="room room--suite">Oficina suite con bacha</span>
                 <span class="room room--private room--second">Oficina privada</span>
@@ -254,11 +288,11 @@
     </section>
 
     <!-- SERVICIOS -->
-    <section id="servicios" class="section section--bone">
+    <section id="servicios" class="section section--dark">
       <div class="container">
         <p class="eyebrow">Servicios</p>
         <h2>El detalle hace la diferencia.</h2>
-        <p class="section-intro">Lo que vas a encontrar en DOMMO además del espacio.</p>
+        <p class="section-intro">Pequeños gestos que te hacen la jornada más fácil.</p>
 
         <ul class="services">
           <li class="service reveal">
@@ -331,7 +365,7 @@
         <div>
           <p class="eyebrow">Contacto</p>
           <h2>Hablemos.</h2>
-          <p class="section-intro">Si querés saber más del coworking, escribinos y te respondemos.</p>
+          <p class="section-intro">¿Tenés dudas o querés conocer el espacio? Escribinos y te respondemos con gusto.</p>
           <a class="btn" data-whatsapp href="#contacto">Escribir por WhatsApp</a>
         </div>
         <dl class="contact-list">
@@ -361,7 +395,7 @@
           <p>Un espacio tranquilo y conectado, en el corazón de Mar del Plata.</p>
         </div>
         <div class="map-frame">
-          <iframe title="Ubicación de DOMMO en San Luis 3802" src="https://www.google.com/maps?q=San+Luis+3802,+Mar+del+Plata,+Argentina&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          <iframe title="Ubicación de DOMMO en San Luis 3802" src="https://www.google.com/maps?q=San+Luis+3802,+Mar+del+Plata,+Argentina&output=embed" width="600" height="360" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
         </div>
       </div>
     </section>
