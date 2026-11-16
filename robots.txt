@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /docs/
 
-Sitemap: https://mfresna.github.io/DOMMO_Landing/sitemap.xml
+Sitemap: https://www.dommocoworking.com.ar/sitemap.xml
