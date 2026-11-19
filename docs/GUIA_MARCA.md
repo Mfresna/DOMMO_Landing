@@ -1,6 +1,6 @@
 # Guía de marca DOMMO para el Frontend
 
-Resumen operativo de los archivos de `docs/` (`Referencias PDF/`, `Logos-DOMMO/`, `Imagenes-DOMMO/`). **Consultar este archivo en lugar de releer los PDF.**
+Resumen operativo de los archivos de `docs/frontend/` (`Referencias PDF/`, `Logos-DOMMO/`, `Imagenes-DOMMO/`). **Consultar este archivo en lugar de releer los PDF.**
 
 Fuentes:
 - `DOMMO · Manual de marca- .pdf` — Manual de marca v1.0, ed. 2026, por Jota Efe Diseño (13 pp.). Texto extraído.
@@ -100,7 +100,7 @@ Combinaciones de color oficiales (fondo · tinta del logo):
 | Negro sobre blanco | `#FFFFFF` | `#000000` | Impresión 1 tinta, fotocopia, sellos |
 | Blanco sobre negro | `#000000` | `#FFFFFF` | |
 
-**Archivos del logo** (kit en `docs/Logos-DOMMO/`):
+**Archivos del logo** (kit en `docs/frontend/Logos-DOMMO/`):
 
 | Archivo (carpeta `SVG/`) | viewBox | Uso |
 |---|---|---|
