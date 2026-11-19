@@ -15,7 +15,7 @@
 
   <!-- Seguridad: CSP mínima (todo es propio; solo se permite el iframe del mapa de Google).
        Los headers X-Content-Type-Options, frame-ancestors y HSTS deben configurarse en el hosting. -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; frame-src https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; frame-src https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'none'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="theme-color" content="#FFFDF7">
 
@@ -46,24 +46,13 @@
   <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/favicon-192x192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/favicon-512x512.png">
 
-  <!-- Fuentes críticas (evitan el salto de texto al cargar) -->
-  <link rel="preload" href="assets/fonts/Poppins-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="assets/fonts/Inter-Variable.ttf" as="font" type="font/ttf" crossorigin>
-
-  <!-- Estilo -->
-  <link rel="stylesheet" href="css/styles.css">
-  <style>
-    /* Evitar la selección de texto en toda la landing. */
-    body, body * {
-      user-select: none;
-      -webkit-user-select: none;
-    }
-  </style>
+  <!-- Estilo (el ?v= fuerza a navegador y Cloudflare a bajar la versión nueva; subir el número en cada despliegue) -->
+  <link rel="stylesheet" href="css/styles.css?v=20261116">
   <!-- Sin JavaScript: mostrar el contenido igual (sin animaciones de entrada) -->
-  <noscript><link rel="stylesheet" href="css/noscript.css"></noscript>
+  <noscript><link rel="stylesheet" href="css/noscript.css?v=20261116"></noscript>
 
   <!-- JS -->
-  <script src="js/main.js" defer></script>
+  <script src="js/main.js?v=20261116" defer></script>
 
   <!-- Datos estructurados (negocio local) -->
   <script type="application/ld+json">
@@ -413,7 +402,7 @@
           <p>Un espacio tranquilo y conectado, en el corazón de Mar del Plata.</p>
         </div>
         <div class="map-frame">
-          <iframe title="Ubicación de DOMMO en San Luis 3802" src="https://www.google.com/maps?q=San+Luis+3802,+Mar+del+Plata,+Argentina&output=embed" width="600" height="360" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          <iframe title="Ubicación de DOMMO en San Luis 3802" src="https://www.google.com/maps?q=San+Luis+3802,+Mar+del+Plata,+Argentina&output=embed" width="600" height="360" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" sandbox="allow-scripts allow-same-origin" allowfullscreen></iframe>
         </div>
       </div>
     </section>

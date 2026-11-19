@@ -117,7 +117,12 @@
         roomImage.alt = room.title;
         roomTitle.textContent = room.title;
         roomDescription.textContent = room.description;
-        roomFeatures.innerHTML = room.features.map(function (feature) { return "<li>" + feature + "</li>"; }).join("");
+        roomFeatures.textContent = "";
+        room.features.forEach(function (feature) {
+          var item = document.createElement("li");
+          item.textContent = feature;
+          roomFeatures.appendChild(item);
+        });
         if (typeof roomDialog.showModal === "function") roomDialog.showModal();
         else roomDialog.setAttribute("open", "");
       }
