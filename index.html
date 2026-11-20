@@ -47,12 +47,12 @@
   <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/favicon-512x512.png">
 
   <!-- Estilo (el ?v= fuerza a navegador y Cloudflare a bajar la versión nueva; subir el número en cada despliegue) -->
-  <link rel="stylesheet" href="css/styles.css?v=20261116">
+  <link rel="stylesheet" href="css/styles.css?v=20261125">
   <!-- Sin JavaScript: mostrar el contenido igual (sin animaciones de entrada) -->
-  <noscript><link rel="stylesheet" href="css/noscript.css?v=20261116"></noscript>
+  <noscript><link rel="stylesheet" href="css/noscript.css?v=20261125"></noscript>
 
   <!-- JS -->
-  <script src="js/main.js?v=20261116" defer></script>
+  <script src="js/main.js?v=20261125" defer></script>
 
   <!-- Datos estructurados (negocio local) -->
   <script type="application/ld+json">
@@ -78,12 +78,13 @@
     "sameAs": ["https://www.instagram.com/dommo.coworking"]
   }
   </script>
+
 </head>
 <body class="page-loading">
 
   <div class="intro-loader" aria-label="DOMMO espacio matheu" role="status">
     <div class="intro-loader__mark">
-      <img src="assets/logo-dommo.svg" alt="DOMMO espacio matheu" width="489" height="180">
+      <img src="assets/logo-dommo-crema.png" alt="DOMMO espacio matheu" width="2028" height="681">
     </div>
     <span class="intro-loader__line" aria-hidden="true"></span>
   </div>
@@ -91,11 +92,11 @@
   <header class="site-header is-top">
     <div class="container header-inner">
       <a href="#inicio" class="brand" aria-label="DOMMO espacio matheu, ir al inicio">
-        <img src="assets/logo-dommo.svg" alt="DOMMO · espacio matheu" width="160" height="59">
+        <img src="assets/logo-dommo-color.png" alt="DOMMO · espacio matheu" width="2028" height="681">
       </a>
       <nav id="menu-principal" class="nav" aria-label="Secciones">
-        <a href="#proyecto-contenido">El proyecto</a>
         <a href="#quienes-somos-contenido">Quiénes somos</a>
+        <a href="#proyecto-contenido">El proyecto</a>
         <a href="#salas-contenido">Espacios</a>
         <a href="#reserva-online-contenido">Reserva online</a>
         <a class="nav__cta" data-whatsapp href="#contacto">Escribinos</a>
@@ -111,7 +112,7 @@
 
     <!-- HERO -->
     <section class="hero">
-      <img class="hero__bg" src="assets/photos/hero-imagen-05.jpg" alt="Recepción de DOMMO espacio matheu, con mostrador de madera y luz cálida" width="940" height="720" fetchpriority="high" decoding="async">
+      <img class="hero__bg" src="assets/photos/hero-senaletica.jpg" alt="Señalética de DOMMO espacio matheu" width="2560" height="1440" fetchpriority="high" decoding="async">
       <div class="hero__veil" aria-hidden="true"></div>
       <div class="hero__lines" aria-hidden="true"><span></span><span></span><span></span></div>
       <div class="container hero__inner">
@@ -119,8 +120,8 @@
         <h1 class="hero__title">DOMMO<span class="sr-only"> espacio matheu — Un espacio a la altura de tu trabajo</span></h1>
         <div class="hero__foot">
           <div class="hero__foot-copy">
-            <p class="hero__tag">Muy pronto · espacio matheu</p>
-            <p class="hero__claim" aria-hidden="true">Un <strong>espacio</strong> a la <strong>altura</strong> de tu <strong>trabajo</strong></p>
+            <p class="hero__tag">Muy pronto · sede 1 · espacio matheu</p>
+            <p class="hero__claim" aria-hidden="true">Oficinas y Salas privadas totalmente equipadas</p>
           </div>
         </div>
       </div>
@@ -132,9 +133,7 @@
         <img class="statement__bg" src="assets/photos/fachada-matheu.jpg" alt="Fachada de DOMMO espacio matheu, en la esquina de Matheu y San Luis" loading="lazy" width="1195" height="896">
         <div class="container statement__top">
           <div class="statement__copy">
-            <h2 class="statement__title reveal reveal--right">Un <em>espacio</em> a la altura de tu <em>trabajo</em>.</h2>
-            <p class="statement__lead reveal">Un espacio de trabajo flexible para profesionales independientes que necesitan trabajar y recibir clientes en un entorno cuidado, privado o semiprivado.</p>
-          </div>
+            <h2 class="statement__title reveal reveal--right">Un <em>espacio</em> a la altura de tu <em>trabajo</em>.</h2>          </div>
         </div>
       </div>
       <div class="container">
@@ -143,7 +142,7 @@
             <span class="space-row__brand">DOMMO</span><span class="space-row__name">ESSENTIAL</span><span class="space-row__meta">Oficina privada</span>
           </a>
           <a class="space-row__item" href="#salas-contenido">
-            <span class="space-row__brand">DOMMO</span><span class="space-row__name">LAB</span><span class="space-row__meta">Oficina suite con bacha</span>
+            <span class="space-row__brand">DOMMO</span><span class="space-row__name">LAB</span><span class="space-row__meta">Oficina con bacha</span>
           </a>
           <a class="space-row__item" href="#salas-contenido">
             <span class="space-row__brand">DOMMO</span><span class="space-row__name">COMFORT</span><span class="space-row__meta">Oficina con living o baño en suite</span>
@@ -152,19 +151,6 @@
             <span class="space-row__brand">DOMMO</span><span class="space-row__name">MEETING ROOM</span><span class="space-row__meta">Sala de reuniones</span>
           </a>
         </nav>
-      </div>
-    </section>
-
-    <!-- EL PROYECTO -->
-    <section id="proyecto-contenido" class="band reveal">
-      <img class="band__bg" src="assets/photos/sala-proyecto.jpg" alt="Sala de trabajo de DOMMO" loading="lazy" width="1364" height="910">
-      <div class="container band__inner">
-        <div class="band__card project-copy">
-          <p class="eyebrow">El proyecto</p>
-          <h2>El espacio también habla de vos.</h2>
-          <p>DOMMO nace en una casa marplatense de las de siempre, renovada con calidez y diseño de autor. La pensamos para quienes trabajan por cuenta propia y quieren recibir a sus clientes en un espacio a la altura, sin el costo de tener una oficina propia.</p>
-          <p>Elegí el espacio que necesitás, para una reunión o para trabajar en tu propia oficina privada, y usá los servicios del lugar sin vueltas. Así vos te ocupás de lo que importa: tu trabajo.</p>
-        </div>
       </div>
     </section>
 
@@ -177,8 +163,21 @@
           <p>Creemos que trabajar bien también depende del lugar donde lo hacés. Por eso cuidamos cada detalle, desde la luz hasta el café, para que te sientas en casa y, a la vez, en tu oficina. Sin rigideces, con trato humano.</p>
         </div>
         <figure class="about-photo" data-scroll-speed="0.08">
-          <img src="assets/photos/sala-1.jpg" alt="Sala luminosa de DOMMO para trabajar" loading="lazy" width="1488" height="992">
+          <img src="assets/photos/papeleria.jpg" alt="Papelería de marca de DOMMO espacio matheu" loading="lazy" width="2012" height="1440">
         </figure>
+      </div>
+    </section>
+
+    <!-- EL PROYECTO -->
+    <section id="proyecto-contenido" class="band reveal">
+      <img class="band__bg" src="assets/photos/hero-recepcion.jpg" alt="Recepción de DOMMO espacio matheu" loading="lazy" width="940" height="720">
+      <div class="container band__inner">
+        <div class="band__card project-copy">
+          <p class="eyebrow">Sede 1 Espacio Matheu</p>
+          <h2>El espacio también habla de vos.</h2>
+          <p>DOMMO nace en una casa marplatense de las de siempre, renovada con calidez y diseño de autor. La pensamos para quienes trabajan por cuenta propia y quieren recibir a sus clientes en un espacio a la altura, sin el costo de tener una oficina propia.</p>
+          <p>Elegí el espacio que necesitás, para una reunión o para trabajar en tu propia oficina privada, y usá los servicios del lugar sin vueltas. Así vos te ocupás de lo que importa: tu trabajo.</p>
+        </div>
       </div>
     </section>
 
@@ -424,7 +423,7 @@
 
   <footer class="site-footer section section--dark">
     <div class="container footer-inner">
-      <img src="assets/logo-dommo.svg" alt="DOMMO · espacio matheu" width="140" height="52">
+      <img src="assets/logo-dommo-crema.png" alt="DOMMO · espacio matheu" width="2028" height="681">
       <p>© <span data-year></span> DOMMO · espacio matheu</p>
     </div>
   </footer>

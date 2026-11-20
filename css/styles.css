@@ -32,7 +32,7 @@ body {
 }
 .intro-loader { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; background: var(--graphite); color: var(--cream); transition: opacity .7s ease, visibility .7s ease; }
 .intro-loader__mark { width: min(34vw, 280px); opacity: 0; transform: translateY(18px) scale(.94); animation: intro-mark-in 1s cubic-bezier(.2,.8,.2,1) .15s forwards; }
-.intro-loader__mark img { width: 100%; height: auto; filter: brightness(0) invert(1); }
+.intro-loader__mark img { width: 100%; height: auto; }
 .intro-loader__line { position: absolute; left: 50%; bottom: 15%; width: min(180px, 30vw); height: 1px; background: var(--mist); transform: translateX(-50%) scaleX(0); transform-origin: center; animation: intro-line-in .9s ease .5s forwards; }
 .page-loading > .site-header, .page-loading > main, .page-loading > .site-footer { opacity: 0; }
 .page-ready > .site-header, .page-ready > main, .page-ready > .site-footer { animation: page-content-in .8s ease forwards; }
@@ -89,7 +89,7 @@ p { margin: 0 0 1em; }
 /* ===== Header ===== */
 .site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 10; background: var(--cream); border-bottom: 1px solid var(--line); transition: background .35s ease, border-color .35s ease; }
 /* Sobre la portada (foto clara arriba): transparente, con logo y textos en grafito */
-.site-header.is-top { background: transparent; border-bottom-color: rgba(60,62,75,.14); }
+.site-header.is-top { background: linear-gradient(to bottom, rgba(255,253,247,.7) 0%, rgba(255,253,247,.35) 55%, rgba(255,253,247,0) 100%) border-box; border-bottom-color: transparent; }
 .site-header.is-top .nav a { color: var(--graphite); }
 .nav__cta { display: none; }
 /* Botón WhatsApp del header: al pasar el mouse, solo el fondo pasa a blanco */
@@ -123,7 +123,7 @@ p { margin: 0 0 1em; }
 .hero__lines span:nth-child(3) { left: 75%; }
 .hero__inner { position: relative; display: flex; flex-direction: column; justify-content: space-between; gap: 32px; width: 100%; padding-top: 128px; padding-bottom: clamp(24px, 4vw, 48px); }
 .hero__intro { align-self: flex-end; max-width: 38ch; margin: 0; text-align: justify; hyphens: auto; font-size: .95rem; color: var(--cream); }
-.hero__title { margin: 0; font-size: min(21vw, 320px); font-weight: 600; line-height: .8; letter-spacing: -.04em; text-transform: uppercase; white-space: nowrap; color: var(--cream); }
+.hero__title { margin: 0; font-size: min(21vw, 320px); font-weight: 700; line-height: .8; letter-spacing: -.04em; text-transform: uppercase; white-space: nowrap; color: var(--cream); }
 .hero__foot { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px; padding-top: 24px; border-top: 1px solid rgba(255,253,247,.28); }
 .hero__tag { margin: 0 0 12px; font: 600 11px/1 var(--font-display); text-transform: uppercase; letter-spacing: .18em; color: var(--cream); }
 .hero__claim { margin: 0; max-width: 28ch; font: 600 clamp(.9rem, 1.4vw, 1.1rem)/1.5 var(--font-display); text-transform: uppercase; letter-spacing: .12em; color: var(--cream); }
@@ -355,7 +355,7 @@ p { margin: 0 0 1em; }
 /* ===== Footer ===== */
 .site-footer { padding: 40px 0; }
 .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
-.footer-inner img { height: 40px; width: auto; filter: brightness(0) invert(1); }
+.footer-inner img { height: 40px; width: auto; }
 .footer-inner p { margin: 0; font-size: .85rem; color: var(--mist); }
 
 /* ===== Responsive ===== */
