@@ -148,8 +148,21 @@ p { margin: 0 0 1em; }
 .project-copy h2, .about-copy h2 { margin-bottom: 1.1rem; }
 .project-copy p, .about-copy p { color: var(--text-soft); }
 .about-section { background: var(--cream); }
+#quienes-somos-contenido { padding-top: 15px; padding-bottom: 15px; }
 .about-grid { grid-template-columns: .9fr 1.1fr; }
 .about-photo { aspect-ratio: 3 / 2; }
+
+/* ===== Nuestros pilares ===== */
+.pillars-section { background: var(--cream); }
+.pillars-grid { grid-template-columns: 1.1fr .9fr; align-items: stretch; }
+.pillars-photo { aspect-ratio: 1 / 1; }
+.pillars-copy { display: flex; flex-direction: column; padding: 20px 0 clamp(24px, 3vw, 40px); border-bottom: 1px solid var(--mist); }
+.pillars-title { margin-bottom: 0; padding-bottom: clamp(16px, 2vw, 24px); border-bottom: 1px solid var(--mist); text-transform: uppercase; }
+.pillars-title em { font-style: italic; font-weight: 400; color: var(--mist); }
+.pillars-list { display: grid; flex: 1; align-content: center; gap: clamp(24px, 4.8vw, 61px); margin: 0; padding: 0; list-style: none; }
+.pillar h3 { display: flex; align-items: center; gap: 12px; margin: 0 0 4px; font: 600 .935rem/1.3 var(--font-display); text-transform: uppercase; letter-spacing: .04em; }
+.pillar h3::before { content: ""; flex: none; width: 14px; height: 14px; border-radius: 50%; background: var(--graphite); }
+.pillar p { margin: 0; padding-left: 26px; color: var(--text-soft); }
 
 /* ===== Recursos visuales de marca ===== */
 .brand-visual { position: relative; overflow: hidden; background: var(--graphite); min-height: 420px; isolation: isolate; }
