@@ -1,6 +1,6 @@
-# Solo para Hostinger (Apache/LiteSpeed). GitHub Pages lo ignora.
+# Para Hostinger (Apache/LiteSpeed).
 <IfModule mod_headers.c>
-  Header always set Content-Security-Policy "default-src 'self'; img-src 'self' data:; frame-src https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'"
+  Header always set Content-Security-Policy "default-src 'self'; img-src 'self' data:; frame-src https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests"
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
   Header always set X-Content-Type-Options "nosniff"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
@@ -8,9 +8,15 @@
   Header always set Cross-Origin-Opener-Policy "same-origin"
   Header always set Cross-Origin-Resource-Policy "same-origin"
   Header always set X-Frame-Options "DENY"
+  # HTML, sitemap y robots: sin caché.
+  <FilesMatch "\.(html|xml|txt)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+  </FilesMatch>
+  # Imágenes, íconos y fuentes: 30 días (2592000 s).
   <FilesMatch "\.(jpg|jpeg|png|svg|ico|ttf)$">
     Header set Cache-Control "public, max-age=2592000"
   </FilesMatch>
+  # CSS y JS: 1 día (86400 s). Al cambiarlos, subir el número de ?v= en index.html.
   <FilesMatch "\.(css|js)$">
     Header set Cache-Control "public, max-age=86400"
   </FilesMatch>
@@ -18,6 +24,16 @@
 
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml application/xml text/plain
+</IfModule>
+
+# Nunca servir archivos ocultos (.git, .env, etc.) ni la carpeta de documentación interna.
+<IfModule mod_authz_core.c>
+  <FilesMatch "^\.">
+    Require all denied
+  </FilesMatch>
+</IfModule>
+<IfModule mod_alias.c>
+  RedirectMatch 404 ^/docs(/|$)
 </IfModule>
 
 Options -Indexes

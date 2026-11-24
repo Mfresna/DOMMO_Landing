@@ -1,9 +1,8 @@
 (function () {
+  "use strict";
 
   var WHATSAPP_NUMERO = "5492236919857";
   var WHATSAPP_MENSAJE = "¡Hola! Quiero saber más sobre DOMMO - Sede Matheu";
-
-  "use strict";
 
   // ---- Siempre iniciar la landing desde arriba al refrescar ----
   if ("scrollRestoration" in window.history) {
@@ -106,7 +105,7 @@
     if (roomDialog && roomDialog.open) roomDialog.close();
   }
 
-  if (roomDialog && roomImage && roomTitle && roomDescription && roomFeatures) {
+  if (roomDialog && roomImage && roomTitle && roomDescription && roomFeatures && roomClose) {
     document.querySelectorAll(".room").forEach(function (roomButton) {
       var isUpper = !!roomButton.closest(".floorplan-map--upper");
       var roomKey = roomButton.classList.contains("room--meeting") ? "meeting" : isUpper && roomButton.classList.contains("room--upper-top") ? "sala6" : isUpper && roomButton.classList.contains("room--suite") ? "sala3" : isUpper && roomButton.classList.contains("room--second") ? "sala7" : isUpper && roomButton.classList.contains("room--hall") ? "sala4" : !isUpper && roomButton.classList.contains("room--lab") ? "sala5" : !isUpper && roomButton.classList.contains("room--common") ? "sala1" : "sala2";
